@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Time from './components/Time';
-import Header from './components/Header';
 
 class App extends Component {
   state = {
@@ -11,7 +10,7 @@ class App extends Component {
     // create the interval once component is mounted
     this.update = setInterval(() => {
       this.setState({ time: new Date().toLocaleTimeString() });
-    }, 1 * 1000); // every 1 seconds
+    }, 1000); // every 1 seconds
   }
 
   componentWillUnmount() {
@@ -22,7 +21,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Time stateTime={this.state.time} />
       </div>
     );
