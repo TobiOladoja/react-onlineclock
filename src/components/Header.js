@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Header = () => {
+export default function Header() {
   return (
     <div>
-      <h1>Online Clock in React</h1>
+      <h1>Digital Clock</h1>
     </div>
   );
-};
-
-export default Header;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Time = () => {
+const Time = props => {
+  const { stateTime } = props;
   return (
     <div>
-      <h1>Time page</h1>
+      <h1> {stateTime} </h1>
     </div>
   );
 };
